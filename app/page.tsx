@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const projects = [
   {
     number: "01",
@@ -70,15 +72,22 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="hero-art" aria-label="Nihat Avşar için geliştirici profili" role="img">
+        <div className="hero-art">
           <div className="orbit orbit-one" />
           <div className="orbit orbit-two" />
           <div className="signal signal-one" />
           <div className="signal signal-two" />
           <div className="profile-card">
+            <Image
+              className="profile-photo"
+              src="/nihat-avsar.jpeg"
+              alt="Muhammed Nihat Avşar, gece şehir manzarası önünde"
+              fill
+              priority
+              sizes="(max-width: 860px) 76vw, 396px"
+            />
             <div className="profile-topline"><span>PROFILE / 2026</span><span>01</span></div>
-            <div className="monogram">NA</div>
-            <div className="profile-bottomline"><span>WEB + AI</span><span>BUILDING</span></div>
+            <div className="profile-bottomline"><span>MUHAMMED N. AVŞAR</span><span>WEB + AI</span></div>
           </div>
           <div className="float-tag tag-code">&lt;/&gt; developer</div>
           <div className="float-tag tag-location">✦ Kayseri, TR</div>
