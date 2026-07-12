@@ -1,5 +1,6 @@
 import Image from "next/image";
 import ContactForm from "./ContactForm";
+import MobileMenu from "./MobileMenu";
 
 const projects = [
   {
@@ -98,7 +99,8 @@ export default function Home() {
       <header className="site-header">
         <a className="brand" href="#top" aria-label="Ana sayfaya dön">
           <span className="brand-mark">NA</span>
-          <span>Muhammed Nihat Avşar</span>
+          <span className="brand-name brand-name-full">Muhammed Nihat Avşar</span>
+          <span className="brand-name brand-name-mobile">Nihat Avşar</span>
         </a>
 
         <nav className="main-nav" aria-label="Ana menü">
@@ -112,6 +114,8 @@ export default function Home() {
         <a className="header-cta" href="#iletisim">
           Birlikte çalışalım <span aria-hidden="true">↗</span>
         </a>
+
+        <MobileMenu />
       </header>
 
       <section className="hero section-shell" id="top" aria-labelledby="hero-title">
