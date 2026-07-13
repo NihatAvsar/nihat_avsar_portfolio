@@ -2,6 +2,9 @@ import { NextRequest, NextResponse } from "next/server";
 
 const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
+// Next.js Route Handlers are deployed as Vercel Serverless Functions.
+export const runtime = "nodejs";
+
 export async function POST(request: NextRequest) {
   const body = await request.json().catch(() => null);
   if (!body) {
@@ -33,7 +36,7 @@ export async function POST(request: NextRequest) {
 
   if (!apiKey) {
     return NextResponse.json(
-      { message: "E-posta servisi henüz yapılandırılmadı.", fallback: true },
+      { message: "E-posta servisi henüz yapılandırılmadı. Lütfen daha sonra tekrar deneyin." },
       { status: 503 },
     );
   }

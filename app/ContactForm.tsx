@@ -32,13 +32,6 @@ export default function ContactForm() {
       const payload = await response.json().catch(() => null);
 
       if (!response.ok) {
-        if (payload?.fallback) {
-          const subject = encodeURIComponent(form.subject);
-          const body = encodeURIComponent(`Ad Soyad: ${form.name}\nE-posta: ${form.email}\n\n${form.message}`);
-          window.location.href = `mailto:nihatavsarr@gmail.com?subject=${subject}&body=${body}`;
-          setStatus({ type: "idle", message: "" });
-          return;
-        }
         throw new Error(payload?.message ?? "Mesaj gönderilemedi.");
       }
 
