@@ -57,6 +57,12 @@ export async function POST(request: NextRequest) {
   });
 
   if (!response.ok) {
+    const error = await response.json().catch(() => null);
+    console.error("Resend e-posta isteği başarısız oldu.", {
+      status: response.status,
+      message: typeof error?.message === "string" ? error.message : "Bilinmeyen hata",
+    });
+
     return NextResponse.json({ message: "Mesaj gönderilemedi. Lütfen daha sonra tekrar deneyin." }, { status: 502 });
   }
 
