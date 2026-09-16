@@ -5,7 +5,7 @@ import MobileMenu from "./MobileMenu";
 const projects = [
   {
     number: "01",
-    category: "YAPAY ZEKA · BİLGİSAYARLI GÖRÜ · BİTİRME PROJESİ",
+    category: "YAPAY ZEKA · DERİN ÖĞRENME · BİTİRME PROJESİ",
     title: "Gerçek Zamanlı Yüz Duygu Analizi Platformu",
     description:
       "Fiziksel mağaza ve hizmet alanlarında müşteri deneyimini anlık ölçmek için kamera, derin öğrenme ve web teknolojilerini tek bir sistemde buluşturan uçtan uca analiz platformu.",
@@ -151,13 +151,13 @@ export default function Home() {
               sizes="(max-width: 860px) 76vw, 396px"
             />
             <div className="profile-topline"><span>PROFILE / 2026</span><span>01</span></div>
-            <div className="profile-bottomline"><span>MUHAMMED N. AVŞAR</span><span>WEB + AI</span></div>
+            <div className="profile-bottomline"><span>NİHAT AVŞAR</span><span>WEB + AI</span></div>
           </div>
-          <div className="float-tag tag-code">&lt;/&gt; developer</div>
-          <div className="float-tag tag-location">✦ Kayseri, TR</div>
+          <div className="float-tag tag-code">&lt;/&gt; Yazılım Mühendisi</div>
+          <div className="float-tag tag-location">✦ Türkiye</div>
         </div>
 
-        <div className="hero-footnote"><span>SCROLL TO EXPLORE</span><span className="scroll-line" /></div>
+        <div className="hero-footnote"><span>KAYDIR VE KEŞFET</span><span className="scroll-line" /></div>
       </section>
 
       <section className="section-shell about-section" id="hakkimda" aria-labelledby="about-title">
@@ -178,9 +178,9 @@ export default function Home() {
           </div>
         </div>
         <div className="stats-row" aria-label="Kısa bilgiler">
-          <div><strong>2026</strong><span>Mezuniyet</span></div>
-            <div><strong>B1</strong><span>İngilizce</span></div>
-          <div><strong>Web · AI</strong><span>Odak alanı</span></div>
+          <div style={{ width: "290px" }}><strong>2026</strong><span>Mezuniyet</span></div>
+          <div style={{ width: "290px" }}><strong>B1</strong><span>İngilizce</span></div>
+          <div style={{ width: "290px" }}><strong>AI · Deep Learning</strong><span>Odak alanı</span></div>
         </div>
       </section>
 
