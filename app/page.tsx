@@ -151,7 +151,7 @@ export default function Home() {
               sizes="(max-width: 860px) 76vw, 396px"
             />
             <div className="profile-topline"><span>PROFILE / 2026</span><span>01</span></div>
-            <div className="profile-bottomline"><span>NİHAT AVŞAR</span><span>WEB + AI</span></div>
+            <div className="profile-bottomline"><span>NİHAT AVŞAR</span></div>
           </div>
           <div className="float-tag tag-code">&lt;/&gt; Yazılım Mühendisi</div>
           <div className="float-tag tag-location">✦ Türkiye</div>
