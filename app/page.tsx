@@ -179,8 +179,7 @@ export default function Home() {
         </div>
         <div className="stats-row" aria-label="Kısa bilgiler">
           <div><strong>2026</strong><span>Mezuniyet</span></div>
-          <div><strong>3+</strong><span>Uçtan uca ürün</span></div>
-          <div><strong>B1</strong><span>İngilizce</span></div>
+            <div><strong>B1</strong><span>İngilizce</span></div>
           <div><strong>Web · AI</strong><span>Odak alanı</span></div>
         </div>
       </section>
@@ -227,8 +226,12 @@ export default function Home() {
         <div className="section-heading"><div><p className="section-kicker">03 / DENEYİM</p><h2 id="experience-title">Yolculuğum</h2></div></div>
         <div className="timeline">
           <article className="timeline-item">
+            <div className="timeline-date">2026</div>
+            <div className="timeline-content"><p className="timeline-type">STAJ</p><h3>Yazılım Mühendisliği Stajyeri</h3><p className="company">OYAK Maden Metalürji / İsdemir (Üretim Uygulamaları Müdürlüğü)</p><p>Ağır sanayi operasyonları için Slab Takip ve Barkod Tespit/Okuma sistemini geliştirdim. YOLOv11 ile nesne tespiti, PaddleOCR ve EasyOCR ile metin/barkod okuma modellerini eğitip optimize ettim; modelleri sahada kullanıma sunan React & Vite tabanlı modern web arayüzünü tasarladım.</p></div>
+          </article>
+          <article className="timeline-item">
             <div className="timeline-date">TEM — EYL 2025</div>
-            <div className="timeline-content"><p className="timeline-type">STAJ / 40 İŞ GÜNÜ</p><h3>Yazılım Geliştirme Stajyeri</h3><p className="company">Detavax Aşı Geliştirme ve Uygulama Merkezi A.Ş.</p><p>Patoloji alanında bir web sitesi geliştirdim; arayüz geliştirme sürecinde React, TypeScript, Next.js, HTML ve CSS ile çalıştım.</p></div>
+            <div className="timeline-content"><p className="timeline-type">STAJ</p><h3>Yazılım Mühendisliği Stajyeri</h3><p className="company">Detavax Aşı Geliştirme ve Uygulama Merkezi A.Ş.</p><p>Patoloji alanında bir web sitesi geliştirdim; arayüz geliştirme sürecinde React, TypeScript, Next.js, HTML ve CSS ile çalıştım.</p></div>
           </article>
           <article className="timeline-item">
             <div className="timeline-date">2022 — 2026</div>
