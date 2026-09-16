@@ -177,11 +177,6 @@ export default function Home() {
             <a className="text-link" href="#iletisim">Tanışalım <span aria-hidden="true">→</span></a>
           </div>
         </div>
-        <div className="stats-row" aria-label="Kısa bilgiler">
-          <div style={{ width: "290px" }}><strong>2026</strong><span>Mezuniyet</span></div>
-          <div style={{ width: "290px" }}><strong>B1</strong><span>İngilizce</span></div>
-          <div style={{ width: "290px" }}><strong>AI · Deep Learning</strong><span>Odak alanı</span></div>
-        </div>
       </section>
 
       <section className="section-shell project-section" id="projeler" aria-labelledby="projects-title">
